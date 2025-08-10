@@ -1,0 +1,152 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body ,ul,li{
+    margin:0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+h1 , h2 , h3{
+    color:#4D4D4D;
+}
+p{
+    color: #717171;
+}
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    /* width: 100%; */
+
+}
+section{
+    padding: 20px;
+    height: fit-content;
+}
+header{
+    background-color: #F5F7FA;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+header div.wrapper{
+    display: flex;    
+    justify-content: space-between;
+    
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.mainh{
+    display: flex;
+
+    flex: 1;
+    gap:7px;
+    /* margin-left: 10px; */
+    /* flex: 1 1 auto; 
+    justify-content: flex-start;  */
+
+}
+
+.mainh img{
+    justify-content: flex-start;
+    height: auto;
+}
+.logo{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+header nav{
+    display: flex;
+    flex-flow: row;
+    flex: 2;
+    
+    justify-content: center;
+
+
+}
+header a{
+    text-decoration: none;
+    color: #263238;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+header h2{
+    line-height: 0;
+    margin: 0;
+    text-indent: -1000000px;
+}
+header ul{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+}
+.login{
+    display: flex;
+    flex: 1;
+    justify-content:flex-end;
+    align-items: center;
+    min-width: 200px;   
+    margin-right: 10px;
+    gap:15px;
+}
+a.loginbtn{
+    color: #4CAF50;
+}
+button.registerbtn{
+    border: none;
+    border-radius: 5px;
+    background-color:#4CAF50;
+    color: white;        
+    border-radius: 6px;   
+    padding: 8px 10px; 
+}
+/* #burger-nav{
+    background-image: url(/images/more.png);
+    background-repeat: no-repeat;
+    justify-self:flex-end ;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    display: none;
+
+}
+@media screen and (max-width: 900px) {
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #F5F7FA;
+        padding: 20px;
+        z-index: 5;
+    }
+    nav ul.show {
+        display: flex;
+    }
+
+    #burger-nav {
+        display: block;
+    }
+     header div.wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+} */

@@ -1,0 +1,142 @@
+#customers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 13;
+    /* padding: 10px 0; */
+    gap: 5%;
+}
+
+#customers img{
+
+    flex-basis: 20%;
+
+}
+
+#customers .content{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    flex-basis: 50%;
+    gap: 1%;
+
+}
+#customers .content h4{
+color: #4CAF50;
+font-weight: bold;
+    margin: 0;
+
+
+}
+
+#customers .logos {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
+    margin: 0%;
+}
+#customers .logos ul {
+
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none   ;
+    margin: 0%;
+
+}
+#customers .logos h3{
+    display: inline-block;
+    color: #4CAF50;
+    margin: 0%;
+
+
+}
+
+@media screen and (max-width: 900px) {
+  #customers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #customers img{
+   width: 50%;
+  }
+  #customers .content {
+    width: 90%;
+    /* max-width: none; */
+  }
+}
+
+/* =============================================== */
+#marketing{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 5%;
+
+}
+#marketing h2{
+margin-bottom: 0%;
+}
+#marketing p{
+    text-align: center;
+    max-width: 75%;
+    margin-bottom: 1%;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    align-items: center;
+    position: relative;
+    width: 40%; 
+    padding: 20px;
+}
+.card img{
+      width: 90%;
+      flex-shrink: 1;
+      object-fit: cover;
+      height: auto;
+      display: block;
+      /* align-items: flex-start; */
+
+}
+.card-content{
+     display: flex;
+    flex-flow: column;
+    flex-shrink: 6;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 8px; 
+    bottom: -15px;
+    text-align: center;
+    width: 60%;
+    height: fit-content;
+    background-color: #F5F7FA;
+      border-radius: 10px;
+
+
+}
+.card-content a{
+    text-decoration: none;
+    margin-top: 0%;
+    color:#4CAF50;
+    font-weight: bold;
+}
+.card-content h4{
+        color:#717171 ;
+}
